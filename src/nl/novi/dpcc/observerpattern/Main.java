@@ -3,6 +3,7 @@ package nl.novi.dpcc.observerpattern;
 import nl.novi.dpcc.observerpattern.domain.MatchEventType;
 import nl.novi.dpcc.observerpattern.domain.Message;
 import nl.novi.dpcc.observerpattern.observer.Observer;
+import nl.novi.dpcc.observerpattern.observer.ScoreBoardObserver;
 import nl.novi.dpcc.observerpattern.observer.SupporterObserver;
 import nl.novi.dpcc.observerpattern.subject.MatchSubject;
 import nl.novi.dpcc.observerpattern.subject.Subject;
@@ -26,6 +27,8 @@ public class Main {
             match.notifyUpdate(pickRandomMessage());
             Thread.sleep(5000);
         }
+
+        System.out.println(scoreBoard.toString());
     }
 
     private static Message pickRandomMessage() {

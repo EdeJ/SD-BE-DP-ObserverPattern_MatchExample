@@ -37,6 +37,8 @@ public  class SupporterObserver implements Observer {
                 return "cheers for the schwalbe";
             case RED_CARD:
                 return "whistles at the referee";
+            case HANDS:
+                return "silent";
         }
         return "leaves the stadium.";
     }
@@ -53,6 +55,8 @@ public  class SupporterObserver implements Observer {
                 return "yells SCHWALBE!";
             case RED_CARD:
                 return "cheers in celebration of the red card.";
+            case HANDS:
+                return "whistling";
         }
         return "leaves the stadium.";
     }
